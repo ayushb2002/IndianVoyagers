@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+@font-face {
+  font-family: myfont;
+  src: url(/fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: navfont;
+  src: url(/fonts/ArchivoNarrow-Bold.ttf);
+}
+
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+.container-fluid {
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+}
+
+#hero-img {
+  background: url("/img/bg1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 480px) {
+  #hero-img {
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #hero-img {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #text-container {
+    position: relative;
+    font-family: myfont;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #text-container {
+    position: relative;
+    font-family: myfont;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #hero-head {
+    margin-top: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #hero-head {
+    margin-top: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 6em;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #hero-subhead {
+    margin-top: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #hero-subhead {
+    margin-top: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+}
+
+nav {
+  margin: 2%;
+  font-family: 'Acme', sans-serif;
+  display: block;
+}
+
+nav > a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 480px) {
+  #nav-header {
+    color: black;
+    font-size: 1em;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #nav-header {
+    color: black;
+    font-size: 2em;
+    margin-left: 10px;
+    margin-right: 400px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .nav-links {
+    color: black;
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .nav-links {
+    color: black;
+    font-size: 1.5em;
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .mid-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mid-area {
+    height: 90vh;
+    padding: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+}
+
+.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .imgholder {
+    margin-top: 10%;
+    margin-left: 45%;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .imgholder {
+    height: 210px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 10%;
+  }
+  .imgholder img {
+    width: 220px;
+    height: 210px;
+    margin-left: 15%;
+  }
+}
+
+.textholder {
+  font-family: navfont;
+}
+
+.foot {
+  background-color: black;
+  height: auto;
+  font-family: myfont;
+}
+
+.foot h1, .foot h3 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: myfont;
+  color: white;
+}
+
+#gallery {
+  margin: 5% 0;
+}
+
+.gall-head {
+  font-family: myfont;
+  margin-bottom: 5%;
+}
+
+.gall-edit {
+  height: 40vh;
+}
+
+#g1:hover {
+  opacity: 0.8;
+}
+
+#g1:hover h3 {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g1 {
+  background: url(/img/g1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g1 h3 {
+  display: none;
+}
+
+#g2:hover {
+  opacity: 0.8;
+}
+
+#g2:hover h3 {
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g2 {
+  background: url(/img/g2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g2 h3 {
+  display: none;
+}
+
+#g3:hover {
+  opacity: 0.8;
+}
+
+#g3:hover h3 {
+  display: block;
+  position: absolute;
+  left: 37%;
+  top: 37%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g3 {
+  background: url(/img/g3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g3 h3 {
+  display: none;
+}
+
+#g4:hover {
+  opacity: 0.8;
+}
+
+#g4:hover h3 {
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g4 {
+  background: url(/img/g4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g4 h3 {
+  display: none;
+}
+
+#g5:hover {
+  opacity: 0.8;
+}
+
+#g5:hover h3 {
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g5 {
+  background: url(/img/g5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g5 h3 {
+  display: none;
+}
+
+#g6:hover {
+  opacity: 0.8;
+}
+
+#g6:hover h3 {
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  color: white;
+  font-family: myfont;
+  font-size: 3em;
+}
+
+#g6 {
+  background: url(/img/g6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#g6 h3 {
+  display: none;
+}
+
+.pf-con {
+  height: 100vh;
+}
+
+.p-img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-img a img {
+  width: 200px;
+  height: 200px;
+  margin-top: 3%;
+  margin-left: 32%;
+  margin-bottom: 3%;
+}
+
+#pf-h {
+  font-family: myfont;
+}
+
+.p-text h1 {
+  padding: 3%;
+  font-size: 2em;
+}
+
+.p-text p {
+  padding: 3%;
+  font-size: 1em;
+}
+
+.cont-f {
+  overflow: hidden;
+  padding: 2%;
+  height: 70vh;
+  font-weight: bolder;
+}
+
+.cont-text {
+  padding: 5%;
+  text-transform: uppercase;
+  font-family: navfont;
+}
+
+.cont-text p {
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,386 @@
+@font-face
+{
+font-family: myfont;
+src: url(/fonts/PermanentMarker-Regular.ttf);
+} 
+@font-face{
+    font-family: navfont;
+    src: url(/fonts/ArchivoNarrow-Bold.ttf);
+}
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+* {
+    margin: 0em;
+    padding: 0em;
+}
+
+.container-fluid {
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+}
+
+#hero-img {
+    background: url("/img/bg1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 480px) {
+        height: 40vh;
+    }
+
+    @media only screen and (min-width: 960px) {
+        height: 100vh;
+    }
+
+}
+
+#text-container {
+    @media only screen and (min-width: 480px) {
+        position: relative;
+        font-family: myfont;
+    }
+
+    @media only screen and (min-width: 960px) {
+        position: relative;
+        font-family: myfont;
+    }
+}
+
+#hero-head {
+    @media only screen and (min-width: 480px) {
+        margin-top: 15%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (min-width: 960px) {
+        margin-top: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6em;
+    }
+}
+
+#hero-subhead {
+    @media only screen and (min-width: 480px) {
+        margin-top: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (min-width: 960px) {
+        margin-top: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+    }
+}
+
+nav{
+    margin: 2%;
+    font-family: 'Acme', sans-serif;
+    display: block;
+}
+
+nav > a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+#nav-header{
+
+    @media only screen and (min-width: 480px) {
+    color: black;
+    font-size: 1em;     
+    margin-right: 100px;  
+    }
+    @media only screen and (min-width: 960px) {
+    color: black;
+    font-size: 2em;
+    margin-left: 10px;
+    margin-right: 400px;    
+    margin-top: 5px;
+    }
+    
+}
+.nav-links{
+    @media only screen and (min-width: 480px) {
+        color: black;
+        font-size: 0.8em;
+        margin-right: 5px;
+    }
+    @media only screen and (min-width: 960px) {
+        color: black;
+        font-size: 1.5em;
+        margin-left: 35px;     
+    }
+    
+}
+
+.mid-area{
+    @media only screen and (min-width: 480px){
+    display: flex;
+    justify-content: center;
+    justify-items: center;        
+    }
+    @media only screen and (min-width: 960px){
+
+        height: 90vh;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.imgholder{
+    @media only screen and (min-width: 480px){
+        margin-top: 10%;
+        margin-left: 45%;
+        margin-bottom: 10%;
+    }
+    @media only screen and (min-width: 960px){
+        height: 210px;
+        overflow: hidden;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+
+        img{
+            width: 220px;
+            height: 210px;
+            margin-left: 15%;
+        }
+    }
+    
+}
+
+.textholder
+{
+    font-family: navfont;
+}
+
+.foot{
+    background-color: black;
+    height: auto;
+    font-family: myfont;
+    h1, h3{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-family: myfont;
+        color: white;
+    }
+}
+
+#gallery{
+    margin: 5% 0;
+}
+
+.gall-head{
+    font-family: myfont;
+    margin-bottom: 5%;
+}
+
+.gall-edit
+{
+    height: 40vh;
+}
+#g1:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g1{
+    background: url(/img/g1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+
+#g2:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g2{
+    background: url(/img/g2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+
+#g3:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 37%;
+    top: 37%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g3{
+    background: url(/img/g3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+#g4:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g4{
+    background: url(/img/g4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+
+#g5:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g5{
+    background: url(/img/g5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+
+#g6:hover{
+    opacity: 0.8;
+    h3{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    color: white;
+    font-family: myfont;
+    font-size: 3em;
+    
+    }
+}
+#g6{
+    background: url(/img/g6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        display: none;
+    }
+}
+.pf-con{
+    height: 100vh;
+}
+.p-img{
+    align-content: center;
+    align-items: center;
+    a{
+        img{
+            width: 200px;
+            height: 200px;
+            margin-top: 3%;
+            margin-left: 32%;
+            margin-bottom: 3%;
+        }
+    }
+
+}
+
+#pf-h{
+    font-family: myfont;
+}
+
+.p-text{
+    h1{
+        padding: 3%;
+        font-size: 2em;
+    }
+    p{
+        padding: 3%;
+        font-size: 1em;
+    }
+}
+
+.cont-f
+{
+    overflow: hidden;
+    padding: 2%;
+    height: 70vh;
+    font-weight: bolder;
+}
+.cont-text{
+    padding: 5%;
+    text-transform: uppercase;
+    font-family: navfont;
+    p{
+        font-size: 1.2em;
+    }
+}
